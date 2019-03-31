@@ -1,0 +1,19 @@
+<mat-spinner *ngIf="!name"></mat-spinner >
+<ul style="padding-left:50px">
+<h1>Users</h1>
+ <button mat-button [routerLink]="['/adduser']">Add a User</button><br/>
+
+<table style ="width :80%">
+ <tr>
+  <th>Name</th>
+  <th>Email</th>
+ </tr>
+
+ <tr *ngFor="let user of name">
+  <td >{{user.name}}</td>
+  <td>{{user.email}}</td>
+ </tr>
+</table>
+</ul>
+
+
